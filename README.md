@@ -100,7 +100,6 @@ All models are serialised alongside their associated scalers.
 ---
 
 ## Results
-```bash
 ### Classification — Hot event detection
 
 **Accuracy vs Epochs (Train / Validation)**  
@@ -110,7 +109,7 @@ All models are serialised alongside their associated scalers.
 ![Classifier confusion matrix](figures/clf_confusion_matrix.png)
 ```
 ---
-```bash
+
 ### Regression — Temperature prediction
 
 **Random Split: True vs Predicted**  
@@ -120,7 +119,7 @@ All models are serialised alongside their associated scalers.
 ![Regression year-wise split](figures/reg_true_vs_pred_yearwise.png)
 
 ---
-```
+
 ## Reproducibility
 
 This project follows best practices for reproducible machine learning:
