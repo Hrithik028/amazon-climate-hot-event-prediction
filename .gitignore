@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+.DS_Store
+
+# Data (do not commit raw course data)
+data/*.csv
+
+# Outputs
+models/
+figures/*
+!figures/clf_confusion_matrix.png
+!figures/clf_accuracy_vs_epochs.png
+!figures/reg_true_vs_pred_random.png
+!figures/reg_true_vs_pred_yearwise.png
+
+# Jupyter
+.ipynb_checkpoints/
