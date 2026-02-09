@@ -17,7 +17,7 @@ Reusable training and evaluation logic is implemented as modular Python scripts 
 
 - Train models: `python -m src.train_all`
 - Evaluate models: `python -m src.evaluate_all`
-
+```bash
 amazon-climate-neural-networks/
 │
 ├── notebooks/
@@ -40,7 +40,7 @@ amazon-climate-neural-networks/
 ├── .gitignore
 └── README.md
 
-
+```
 ---
 
 ## Data overview
@@ -100,7 +100,7 @@ All models are serialised alongside their associated scalers.
 ---
 
 ## Results
-
+```bash
 ### Classification — Hot event detection
 
 **Accuracy vs Epochs (Train / Validation)**  
@@ -108,9 +108,9 @@ All models are serialised alongside their associated scalers.
 
 **Confusion Matrix (Test Split)**  
 ![Classifier confusion matrix](figures/clf_confusion_matrix.png)
-
+```
 ---
-
+```bash
 ### Regression — Temperature prediction
 
 **Random Split: True vs Predicted**  
@@ -120,7 +120,7 @@ All models are serialised alongside their associated scalers.
 ![Regression year-wise split](figures/reg_true_vs_pred_yearwise.png)
 
 ---
-
+```
 ## Reproducibility
 
 This project follows best practices for reproducible machine learning:
