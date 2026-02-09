@@ -1,6 +1,6 @@
-# Amazon Climate Hot-Event Prediction with Neural Networks
+# Amazon Climate Hot-Event Prediction
 
-This project applies neural network models to long-term climate time-series data to predict:
+This project applies Machine Learning techniques and Neural Network (Perceptron) to long-term climate time-series data to predict:
 
 - **Task A (Classification):** Whether a given month experiences an extreme *hot event*
 - **Task B (Regression):** The *monthly temperature value* itself
@@ -17,6 +17,7 @@ Reusable training and evaluation logic is implemented as modular Python scripts 
 
 - Train models: `python -m src.train_all`
 - Evaluate models: `python -m src.evaluate_all`
+
 ```bash
 amazon-climate-neural-networks/
 │
@@ -102,20 +103,24 @@ All models are serialised alongside their associated scalers.
 ## Results
 ### Classification — Hot event detection
 
-**Accuracy vs Epochs (Train / Validation)**  
+**Accuracy vs Epochs (Train / Validation)** 
+
 ![Classifier accuracy vs epochs](figures/clf_accuracy_vs_epochs.png)
 
 **Confusion Matrix (Test Split)**  
+
 ![Classifier confusion matrix](figures/clf_confusion_matrix.png)
-```
+
 ---
 
 ### Regression — Temperature prediction
 
 **Random Split: True vs Predicted**  
+
 ![Regression random split](figures/reg_true_vs_pred_random.png)
 
 **Year-wise Split: True vs Predicted (Temporal Generalisation)**  
+
 ![Regression year-wise split](figures/reg_true_vs_pred_yearwise.png)
 
 ---
